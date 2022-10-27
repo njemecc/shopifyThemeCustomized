@@ -1,0 +1,72 @@
+<html>
+<body>
+<div class="algolia-overlay">
+<div class="algolia-wrapper pd-search-results" style="display: none;">
+<div class="container">
+<a onclick="closeAlgolia()" class="d-none pd-algolia-close search-close-btn close-lg" type="button"><i class="fa fa-times" aria-hidden="true"></i></a>
+<div class="row sort_container">
+<div id="pd-pagination-top" class="col-xs-12 col-md-3"></div>
+<div class="d-none col-xs-12 col-md-3 algolia-toggle-filters-box">
+<a class="algolia-toggle-filters">
+<span>Hide Filters</span>
+</a>
+</div>
+<div class="col-md-6 text-center">
+<div class="btn-text"><div id="pd-stats"></div></div>
+</div>
+<div class="col-md-3">
+<div id="pd-sort-by"></div>
+</div>
+</div>
+<div class="row">
+<div class="d-none filter-sidebar col-xs-12 col-md-3">
+<div class="sidebar-filters panel panel-default">
+<div class="d-md-none panel-heading panel-heading-thumbnails">
+<h3 class="panel-title">Sort</h3>
+</div>
+<div class="d-md-none form-horizontal">
+<div class="form-group">
+<div class="col-xs-12">
+<div id="pd-sort-by-mobile"></div>
+</div>
+</div>
+</div>
+<ul id="filters" class="list-group" role="group">
+<li class="list-group-item list-group-collapse filter-title">
+<div class="panel-heading panel-heading-thumbnails">
+<h3 class="panel-title">Category</h3>
+</div>
+<div id="side-algolia-cat" class="panel-collapse collapse sidefilter-categ list-group in">
+<div id="pd-categories"><div class="ais-Panel ais-Panel--noRefinement" hidden=""><div class="ais-Panel-body"><div></div></div></div></div>
+</div>
+</li>
+<li class="d-none list-group-item list-group-collapse filter-title">
+<div class="panel-heading panel-heading-thumbnails">
+<h3 class="panel-title">Brand</h3>
+</div>
+<div id="side-algolia-brand" class="panel-collapse collapse sidefilter-categ list-group in">
+<div id="pd-brands"><div class="ais-Panel ais-Panel--noRefinement" hidden=""><div class="ais-Panel-body"><div></div></div></div></div>
+</div>
+</li>
+<li class="list-group-item list-group-collapse filter-title">
+<div class="panel-heading panel-heading-thumbnails">
+<h3 class="panel-title">Price</h3>
+</div>
+<div id="side-algolia-price" class="panel-collapse collapse sidefilter-categ list-group in">
+<div id="pd-price"><div class="ais-Panel ais-Panel--noRefinement" hidden=""><div class="ais-Panel-body"><div></div></div></div></div>
+</div>
+</li>
+<div id="pd-clear-refinements"></div>
+</ul>
+</div>
+</div>
+<div class="pd-category-content col-xs-12 thumb col-sm-12 col-md-9">
+<div id="pd-results"></div>
+<div id="pd-pagination"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
